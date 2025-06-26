@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+    <div id="container">
+      <h1 id="mainHead">Smart Temperature Converter</h1>
+       
+      <div id="input">
+      <input type="text" id="tempInput" placeholder="e.g., 86 F or 30 C">
+        <button class="speakBtn"><i class="fa-solid fa-microphone"></i></button>
+      </div>
+      
+        <div id="presets">
+         <button class="presetBtn"><i class="fa-solid fa-snowflake"></i> Freezing</button>
+         <button class="presetBtn"><i class="fa-solid fa-fire-flame-simple"></i> Boiling</button>
+         <button class="presetBtn"><i class="fa-solid fa-cloud-sun"></i> Room Temp</button>
+      </div>
+
+      <input type="range" id="slider" min="-100" max="100" value="0"/>
+
+      <div class="thermometer">
+       <div id="thermobar"></div>
+       </div>
+
+       <p id="result"></p>
+       <p id="suggestion"></p>
+
+        <div class="toggle-row">
+         <span><i class="fa-solid fa-moon"></i> Dark Mode</span>
+         <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider-toggle"></span>
+         </label>
+        </div>
+   </div>
+    <script src="app.js"></script>
+ </body>
+ </html>
